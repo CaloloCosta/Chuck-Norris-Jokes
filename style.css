@@ -35,3 +35,10 @@
         left: 50%;
         transform: translateX(-50%);
       }
+
+     @media screen and (max-width: 400px) {
+          html{
+               font-family: 21px;
+          }
+
+}
