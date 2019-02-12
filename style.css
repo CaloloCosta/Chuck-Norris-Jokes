@@ -37,8 +37,8 @@
       }
 
      @media screen and (max-width: 400px) {
-          html{
-               font-family: 21px;
+          .Jooke-board{
+               width: 95vw;
           }
 
 }
