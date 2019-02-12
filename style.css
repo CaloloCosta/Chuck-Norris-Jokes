@@ -14,7 +14,7 @@
         letter-spacing: 1rem;
         font-size: 3rem;
       }
-      .Jooke-board{
+      .Joke-board{
         box-shadow: 0rem 0rem 1rem rgba(0,0,0,.5);
         width: 40rem;
         height: 15rem;
@@ -37,8 +37,8 @@
       }
 
      @media screen and (max-width: 400px) {
-          .Jooke-board{
-               width: 95vw;
+          .Joke-board{
+               width: 40rem;
           }
 
 }
