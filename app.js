@@ -1,6 +1,6 @@
 window.onload = getJoke;
 document.getElementById('button').addEventListener('click',getJoke);
-
+/*
 function getJoke(){
   const xhr = new XMLHttpRequest();
   xhr.open('GET','https://api.icndb.com/jokes/random',true);
@@ -13,4 +13,24 @@ function getJoke(){
     }
   }
   xhr.send();
+}*/
+
+// get the data using async function
+class Request{
+  async getData(url){
+    const response = await response();
+    const data = response.json();
+    if(data.type === 'success')
+      return data;
+    return null;
+  }
 }
+
+const r = new Request;
+r.getData('https://api.icndb.com/jokes/random')
+.then(data =>{
+   document.querySelector("#joke").innerHTML = data.value.joke;
+})
+.catch(e => console.log(e));
+
+console.log("async working");
