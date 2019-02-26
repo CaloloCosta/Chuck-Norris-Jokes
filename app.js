@@ -18,8 +18,8 @@ function getJoke(){
 // get the data using async function
 class Request{
   async getData(url){
-    const response = await response();
-    const data = response.json();
+    const response = await fetch(url);
+    const data = await response.json();
     if(data.type === 'success')
       return data;
     return null;
