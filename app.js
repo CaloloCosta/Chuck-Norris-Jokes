@@ -25,7 +25,7 @@ class Request{
     return null;
   }
 }
-function getjoke(){
+function getJoke(){
   const r = new Request;
 r.getData('https://api.icndb.com/jokes/random')
 .then(data =>{
