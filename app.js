@@ -25,8 +25,8 @@ class Request{
     return null;
   }
 }
-
-const r = new Request;
+function getjoke(){
+  const r = new Request;
 r.getData('https://api.icndb.com/jokes/random')
 .then(data =>{
    document.querySelector("#joke").innerHTML = data.value.joke;
@@ -34,3 +34,5 @@ r.getData('https://api.icndb.com/jokes/random')
 .catch(e => console.log(e));
 
 console.log("async working");
+}
+
